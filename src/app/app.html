@@ -9,7 +9,7 @@
   </div>
 
   <div class="balance-section">
-    <h2>Saldo: {{ machineService.balance | currency : 'EUR' }}</h2>
+    <h2>Saldo: {{ machineService.getBalance() | currency : 'EUR' }}</h2>
     <p-button (click)="returnMoney()" label="Devolver" severity="success" />
   </div>
 
@@ -46,9 +46,9 @@
   </p-table>
 
   <div class="result-section">
-    <h2>Cambio: {{ machineService.change | currency : 'EUR' }}</h2>
+    <h2>Cambio: {{ machineService.getChange() | currency : 'EUR' }}</h2>
 
-    @if (machineService.change > 0) {
+    @if (machineService.getChange() > 0) {
     <p-button (click)="returnMoney()" label="Recojer" severity="success" />
     }
   </div>

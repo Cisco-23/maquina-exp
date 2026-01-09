@@ -55,8 +55,6 @@ export class App implements OnInit {
   }
 
   collectProduct() {
-    this.productsUsuari().length = 0;
-    this.machineService.change = this.machineService.balance;
-    this.machineService.balance = 0;
+    this.machineService.collectProductes();
   }
 }
