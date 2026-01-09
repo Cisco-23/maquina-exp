@@ -11,7 +11,7 @@ export interface CollectedProducts {
   amount: number;
 }
 
-export const COINS: number[] = [2, 1, 0.5, 0.2, 0.5];
+export const COINS: number[] = [2, 1, 0.5, 0.2, 0.05];
 
 export const PRODUCTS_MOCK: Product[] = [
   { name: 'Coca-cola', price: 0.8, stock: 3 },
