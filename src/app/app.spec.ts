@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { App } from './app';
-import { MachineService } from './services/machine.service';
+import { VendingMachine } from './components/vending-machine/vending-machine';
 import { of } from 'rxjs';
 
 /*class MockVendingService {
@@ -18,7 +18,7 @@ describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [App],
-      providers: [{ provide: MachineService }],
+      providers: [{ provide: VendingMachine }],
     }).compileComponents();
 
     fixture = TestBed.createComponent(App);
